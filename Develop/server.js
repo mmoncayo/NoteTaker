@@ -16,6 +16,8 @@ var PORT = process.env.PORT || 3000;
 // allows express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// this part of the code helps for serving static files in express using the route middleware function
+app.use(express.static('public'));
 
 // ROUTER
 // ================================================================================
