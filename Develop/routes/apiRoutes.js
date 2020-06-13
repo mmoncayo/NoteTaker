@@ -21,7 +21,7 @@ module.exports = function (app) {
     app.get("/api/notes", function (err, res) {
         try {
             // reads in db.json file (the notes saved in the json file)
-            savedNotes = fs.readFileSync("../db/db.json", "utf-8");
+            savedNotes = fs.readFileSync("./db/db.json", "utf-8");
 
             // parses it so the saved notes are an array of objects
             savedNotes = JSON.parse(savedNotes);
@@ -42,7 +42,7 @@ module.exports = function (app) {
     app.post("/api/notes", function (req, res) {
         try {
             // reads the saved notes file (db.json)
-            savedNotes = fs.readFileSync("../db/db.json", "utf-8");
+            savedNotes = fs.readFileSync("./db/db.json", "utf-8");
             console.log(savedNotes);
 
             // this parses the date to save as an array of objects
@@ -59,7 +59,7 @@ module.exports = function (app) {
             savedNotes = JSON.stringify(savedNotes);
 
             // now you can write the new note into the saved notes file
-            fs.writeFileSync("../db/db.json", savedNotes, "utf-8", (err) => {
+            fs.writeFileSync("./db/db.json", savedNotes, "utf-8", (err) => {
                 // takes care of error handling
                 if (err) throw err;
             });
@@ -81,7 +81,7 @@ module.exports = function (app) {
     app.delete("/api/notes/:id", function (req, res) {
         try {
             // reads the saved notes file (db.json)
-            savedNotes = fs.readFileSync("../db/db.json", "utf-8");
+            savedNotes = fs.readFileSync("./db/db.json", "utf-8");
 
             // this parses the date to save as an array of objects
             savedNotes = JSON.parse(savedNotes);
@@ -95,7 +95,7 @@ module.exports = function (app) {
             savedNotes = JSON.stringify(savedNotes);
 
             // now you can re-write the saved notes back into the saved notes file updated without the deleted note
-            fs.writeFileSync("../db/db.json", savedNotes, "utf-8", (err) => {
+            fs.writeFileSync("./db/db.json", savedNotes, "utf-8", (err) => {
                 // takes care of error handling
                 if (err) throw err;
             });
