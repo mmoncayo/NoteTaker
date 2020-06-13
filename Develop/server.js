@@ -30,6 +30,6 @@ require("./routes/htmlRoutes")(app);
 // ================================================================================
 
 // initiates the start of our code when we run node
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
-  });
+});
