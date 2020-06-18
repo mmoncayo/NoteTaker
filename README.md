@@ -1,5 +1,5 @@
 # Note Taker App
-https://img.shields.io/github/license/mmoncayo/NoteTaker https://img.shields.io/github/languages/code-size/mmoncayo/NoteTaker https://img.shields.io/node/v/express https://img.shields.io/github/followers/mmoncayo?style=social
+[!https://img.shields.io/github/license/mmoncayo/NoteTaker] [https://img.shields.io/github/repo-size/mmoncayo/NoteTaker] [!https://img.shields.io/node/v/express] [!https://img.shields.io/github/followers/mmoncayo?style=social]
 ## Description
 ​
 An application that can write, save, and delete notes using an Express backend to save and retrieve note data from a JSON file.
@@ -26,7 +26,7 @@ An application that can write, save, and delete notes using an Express backend t
 
 ## Demo
 
-
+![Note Taker Demo](./NoteTakerDemo.gif)
 
 ## Prerequisites
 
