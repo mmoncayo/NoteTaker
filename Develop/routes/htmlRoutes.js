@@ -14,7 +14,12 @@ module.exports = function (app) {
     app.get("/notes", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/notes.html"));
     });
+
     // should return the main webpage (index.html)
+    app.get("/", function (req, res){
+        res.sendFile(path.join(__dirname, "../public/index.html"));
+    });
+    // if no matched routing can be located, this should be the default to the home page
     app.get("*", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/index.html"));
     });
