@@ -43,7 +43,6 @@ module.exports = function (app) {
         try {
             // reads the saved notes file (db.json)
             savedNotes = fs.readFileSync("./db/db.json", "utf-8");
-            console.log(savedNotes);
 
             // this parses the date to save as an array of objects
             savedNotes = JSON.parse(savedNotes);
@@ -65,6 +64,7 @@ module.exports = function (app) {
             });
             // once it is written, change back to an array of objects and send it back to the browser
             res.json(JSON.parse(savedNotes));
+            console.log(savedNotes);
 
         }
         // more error handling
