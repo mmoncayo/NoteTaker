@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Note taking app that allows you to create, save, and delete note files",
   "main": "server.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
