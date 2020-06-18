@@ -4,7 +4,7 @@
   "description": "Helps you keep track of notes taken",
   "main": "server.js",
   "dependencies": {
-     "express": "^4.16.3"
+    "express": "^4.16.3"
   },
   "scripts": {
     "start": "node server.js"
