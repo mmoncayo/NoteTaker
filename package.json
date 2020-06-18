@@ -1,0 +1,17 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "Note taking app that allows you to create, save, and delete note files",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^2.0.4"
+  }
+}
